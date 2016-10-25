@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaterialDesign"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="Test UI for Material Design"
         Height="350"
         Width="525"
         >
