@@ -9,8 +9,15 @@
         Height="350"
         Width="525"
         >
-    
-    <Grid>
+    <Window.Resources>
         
+    </Window.Resources>
+
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow"   FontFamily="{StaticResource Font}" 
+>
+            ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+        </TextBlock>
     </Grid>
 </Window>

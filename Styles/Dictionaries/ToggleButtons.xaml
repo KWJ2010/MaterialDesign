@@ -1,8 +1,11 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-<!--This is the merged Resource Dictionary that can be referenced by other projects once this is built as a .dll to get all of the resources referenced here-->
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Styles"
+                    >
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/FontsDictionary.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
+    
+    
 </ResourceDictionary>

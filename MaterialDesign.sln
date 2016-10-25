@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesign", "MaterialDesign\MaterialDesign.csproj", "{DA7E9D5C-237F-4607-8D5C-B009BB73959B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D2E771EF-F7F2-4BDD-9703-07FBCFC62590} = {D2E771EF-F7F2-4BDD-9703-07FBCFC62590}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styles", "Styles\Styles.csproj", "{D2E771EF-F7F2-4BDD-9703-07FBCFC62590}"
 EndProject
