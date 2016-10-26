@@ -6,22 +6,51 @@
         xmlns:local="clr-namespace:MaterialDesign"
         mc:Ignorable="d"
         Title="Test UI for Material Design"
-        Height="350"
-        Width="525"
+        Height="auto"
+        Width="350"
         >
     <Window.Resources>
 
     </Window.Resources>
 
 
-    <StackPanel>
-        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" 
->
-            ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
-        </TextBlock>
-        <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" 
->
-            ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
-        </TextBox>
-    </StackPanel>
+        <TabControl >
+            <TabItem Header="Fonts">
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
+                        ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+                    </TextBlock>
+                    <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
+                        ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+                    </TextBox>
+                </StackPanel>
+            </TabItem>
+        <TabItem Header="Colors">
+            <Border Margin="10" BorderBrush="Black" BorderThickness="2" CornerRadius="3" Background="WhiteSmoke" >
+                <Border.Effect>
+                    <DropShadowEffect x:Name="DropShadowEffect" Opacity="0.7" Color="Black" BlurRadius="15" RenderingBias="Quality" ShadowDepth="1" RenderOptions.BitmapScalingMode="HighQuality" Direction="-45"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="350"/>
+                        <RowDefinition Height="55"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Height="25">
+                        <TextBlock VerticalAlignment="Stretch" Margin="0,-7,5,2" FontSize="22" >&#x22bf;</TextBlock>
+
+                        <TextBlock VerticalAlignment="Stretch" Margin="0,-5,5,2" FontSize="22" >&#128267;</TextBlock>
+                        <TextBlock VerticalAlignment="Stretch" Margin="0,2,5,2" >12:31 pm</TextBlock>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+        </TabItem>
+            <TabItem>
+
+            </TabItem>
+        </TabControl>
+           
+
 </Window>
