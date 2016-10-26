@@ -2,8 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     >
 
-
-    <FontFamily x:Key="DefaultFont" >Wingdings</FontFamily>
+    <FontFamily x:Key="DefaultFont" >pack://application:,,,/Styles;component/Fonts/#Roboto</FontFamily>
+    <!--To set a custom font, place the .ttf files into the Fonts folder-->
+    <!--    Then add the pack:// declaration to that file, but instead of the file name, use the font name with #infront of it-->
+    <!--    This loads the font resource without it being installed on the users machine-->
     
     <Style TargetType="Window">
         <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
@@ -11,5 +13,15 @@
     <Style TargetType="TextBox">
         <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
     </Style>
-    <!-- pack://application:,,,/Styles;component/Dictionaries/Fonts/Roboto-ThinItalic.tff -->
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
+    </Style>
+    <Style TargetType="ListBox">
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
+    </Style>
+    
+    <!--There is a better way than listing out each control that you want the font applied to but I haven't gotten those ways to work yet-->
+    
+    
+    <!-- pack://application:,,,/Styles;component/Fonts/Roboto-ThinItalic.tff -->
 </ResourceDictionary>
