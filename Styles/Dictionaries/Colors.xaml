@@ -315,4 +315,8 @@
     <SolidColorBrush x:Key="Grey800" Color="#424242" />
     <SolidColorBrush x:Key="Grey900" Color="#212121" />
 
+    <!--Other-->
+    <SolidColorBrush x:Key="White"      Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Black"      Color="#000000" />
+    <SolidColorBrush x:Key="WhiteSmoke" Color="#FFF5F5F5" />
 </ResourceDictionary>

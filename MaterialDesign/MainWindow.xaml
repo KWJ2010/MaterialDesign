@@ -6,51 +6,66 @@
         xmlns:local="clr-namespace:MaterialDesign"
         mc:Ignorable="d"
         Title="Test UI for Material Design"
-        Height="auto"
-        Width="350"
+        Height="575"
+        Width="325"
         >
     <Window.Resources>
 
     </Window.Resources>
 
 
-        <TabControl >
-            <TabItem Header="Fonts">
-                <StackPanel>
-                    <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
-                        ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
-                    </TextBlock>
-                    <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
-                        ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
-                    </TextBox>
-                </StackPanel>
-            </TabItem>
+    <TabControl >
         <TabItem Header="Colors">
-            <Border Margin="10" BorderBrush="Black" BorderThickness="2" CornerRadius="3" Background="WhiteSmoke" >
+            <Border Margin="10" BorderBrush="{DynamicResource Black}" BorderThickness="2" CornerRadius="3" Background="{DynamicResource WhiteSmoke}" >
                 <Border.Effect>
                     <DropShadowEffect x:Name="DropShadowEffect" Opacity="0.7" Color="Black" BlurRadius="15" RenderingBias="Quality" ShadowDepth="1" RenderOptions.BitmapScalingMode="HighQuality" Direction="-45"/>
                 </Border.Effect>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25" />
                         <RowDefinition Height="55"/>
-                        <RowDefinition Height="350"/>
-                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="355"/>
+                        <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Height="25">
+                    <Canvas Grid.Row="0" Background="{DynamicResource Grey300}"/>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Height="25" >
                         <TextBlock VerticalAlignment="Stretch" Margin="0,-7,5,2" FontSize="22" >&#x22bf;</TextBlock>
 
                         <TextBlock VerticalAlignment="Stretch" Margin="0,-5,5,2" FontSize="22" >&#128267;</TextBlock>
                         <TextBlock VerticalAlignment="Stretch" Margin="0,2,5,2" >12:31 pm</TextBlock>
                     </StackPanel>
+                    <Canvas Grid.Row="1" Background="{DynamicResource Grey100}" />
+                    <TextBlock Grid.Row="1" Text="Grey100" Margin="10"/>
+                    <Canvas Grid.Row="2" Background="{DynamicResource Grey50}"  />
+                    <TextBlock Grid.Row="2" Text="Grey50" Margin="10"/>
+                    <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Canvas Width="195" Height="195" Background="{DynamicResource White}">
+                            <TextBlock Margin="10" Width="175" Text="This white background finishes off the Light Theme color palette by Google" TextWrapping="WrapWithOverflow"/>
 
+                        </Canvas>
+                    </StackPanel>
+                    <Canvas Grid.Row="3" Background="{DynamicResource Black}"/>
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x25c1;</TextBlock>
+                        <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x2b55;</TextBlock>
+                        <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x25a2;</TextBlock>
+                    </StackPanel>
                 </Grid>
             </Border>
         </TabItem>
-            <TabItem>
+        <TabItem Header="Fonts">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
+                        ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+                </TextBlock>
+                <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" >
+                    ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+                </TextBox>
+                <!--TODO Make a Combobox that you  can select fonts from and see them displayed here-->
+            </StackPanel>
+        </TabItem>
+        <TabItem>
 
-            </TabItem>
-        </TabControl>
-           
-
+        </TabItem>
+    </TabControl>
 </Window>
