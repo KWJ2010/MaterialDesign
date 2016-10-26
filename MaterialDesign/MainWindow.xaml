@@ -10,14 +10,18 @@
         Width="525"
         >
     <Window.Resources>
-        
+
     </Window.Resources>
 
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow"   FontFamily="{StaticResource Font}" 
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" 
 >
             ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
         </TextBlock>
-    </Grid>
+        <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" TextWrapping="WrapWithOverflow" 
+>
+            ABCDEFGHIJKLMNOPQRSTUVWKYZ 123456789 /*-!@#$%^*()_+=,>.?/[]{}\|`~''""
+        </TextBox>
+    </StackPanel>
 </Window>

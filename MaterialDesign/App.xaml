@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:MaterialDesign"
              StartupUri="MainWindow.xaml"
              >
-    
-    <Application.Resources>
 
+    <Application.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Styles;component/MaterialDesign.xaml"/>
     </Application.Resources>
 </Application>
