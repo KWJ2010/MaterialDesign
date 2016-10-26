@@ -4,5 +4,10 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/FontsDictionary.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/ToggleButtons.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/IconsDictionary.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/ButtonsDictionary.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Styles;component/Dictionaries/ControlsDictionary.xaml"/>
+
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
