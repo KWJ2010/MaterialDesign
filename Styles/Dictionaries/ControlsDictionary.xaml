@@ -67,11 +67,11 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="BorderBrush" Value="{StaticResource MouseOverBrush}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource Blue300}"/>
                             <Setter Property="BorderThickness" Value="1"/>
                         </Trigger>
                         <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                            <Setter Property="BorderBrush" Value="{StaticResource MouseOverBrush}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource Blue300}"/>
                             <Setter Property="BorderThickness" Value="2"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
@@ -113,7 +113,7 @@
                                         </Border>
                                         <ControlTemplate.Triggers>
                                             <Trigger Property="MenuItem.IsHighlighted" Value="True">
-                                                <Setter TargetName="PART_MasterBorder" Property="Panel.Background" Value="{StaticResource MouseOverBrush}"/>
+                                                <Setter TargetName="PART_MasterBorder" Property="Panel.Background" Value="{StaticResource Blue300}"/>
                                                 <Setter Property="TextElement.Foreground" Value="White"/>
                                             </Trigger>
                                             <Trigger Property="UIElement.IsEnabled" Value="False">
@@ -135,7 +135,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="ComboBoxItem.IsHighlighted" Value="True">
-                            <Setter TargetName="PART_MasterBorder" Property="Panel.Background" Value="{StaticResource MouseOverBrush}"/>
+                            <Setter TargetName="PART_MasterBorder" Property="Panel.Background" Value="{StaticResource Blue300}"/>
                             <Setter Property="TextElement.Foreground" Value="White"/>
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
@@ -535,12 +535,30 @@
                       Opacity="0.75"
                       Color="Black"
                       />
+    <DropShadowEffect x:Key="ToolTipDropShadowEffect" 
+                      RenderOptions.BitmapScalingMode="HighQuality"
+                      RenderingBias="Quality"
+                      ShadowDepth="1"
+                      Direction="-45"
+                      BlurRadius="5"
+                      Opacity="0.75"
+                      Color="Black"
+                      />
+    <DropShadowEffect x:Key="WindowDropShadowEffect"
+                      Color="{Binding Source={StaticResource DarkGray}, Path=Color}"
+                      RenderOptions.BitmapScalingMode="HighQuality"
+                      RenderingBias="Quality"
+                      ShadowDepth="20"
+                      Direction="-90"
+                      BlurRadius="45"
+                      Opacity="0.50"
+                      />
     
     <!--COMBOBOX-->
     <Style x:Key="{x:Type ComboBox}" TargetType="{x:Type ComboBox}">
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
-        <Setter Property="BorderBrush" Value="{TemplateBinding BorderBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Grey}"/>
         <Setter Property="Background" Value="{StaticResource White}"/>
         <Setter Property="Foreground" Value="{StaticResource Black}"/>
         <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>

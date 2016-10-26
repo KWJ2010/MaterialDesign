@@ -97,7 +97,7 @@
                     <ToggleButton Style="{StaticResource AnimatedSwitchStyle}" Width="25" Height="25" />
 
                     <TextBlock>ComboBox:</TextBlock>
-                    <ComboBox  Width="125" Height="25" BorderBrush="{DynamicResource Teal}">
+                    <ComboBox  Width="125" Height="25" >
                         <ComboBoxItem>
                             this is an item 1
                         </ComboBoxItem>
