@@ -70,9 +70,9 @@
                         </StackPanel>
                         <Canvas Grid.Row="3" Background="{DynamicResource Black}"/>
                         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" >
-                            <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x25c1;</TextBlock>
-                            <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x2b55;</TextBlock>
-                            <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0">&#x25a2;</TextBlock>
+                            <!--<TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0" Text="&#x25c1;" />-->
+                            <TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="40" Margin="25,5,25,0" Text="&#x2b55;" />
+                            <!--<TextBlock VerticalAlignment="Center" Foreground="WhiteSmoke" FontSize="35" Margin="25,-5,25,0" Text="&#x25a2;" />-->
                         </StackPanel>
                     </Grid>
                 </Border>
