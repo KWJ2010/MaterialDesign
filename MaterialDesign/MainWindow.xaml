@@ -53,10 +53,11 @@
                         </Grid.RowDefinitions>
                         <Canvas Grid.Row="0" Background="{DynamicResource Grey300}"/>
                         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Height="25" >
-                            <TextBlock VerticalAlignment="Stretch" Margin="0,-7,5,2" FontSize="22" >&#x22bf;</TextBlock>
-
-                            <TextBlock VerticalAlignment="Stretch" Margin="0,-5,5,2" FontSize="22" >&#128267;</TextBlock>
-                            <TextBlock VerticalAlignment="Stretch" Margin="0,2,5,2" >12:31 pm</TextBlock>
+                            <TextBlock VerticalAlignment="Stretch" Margin="0,-8,5,2" FontSize="28" >&#x22bf;</TextBlock>
+                            <!--Reception bars-->
+                            <TextBlock VerticalAlignment="Stretch" Margin="0,2,5,2" FontSize="14" >&#128267;</TextBlock>
+                            <!--Battery-->
+                            <TextBlock VerticalAlignment="Stretch" Margin="0,4,5,2" >12:31 pm</TextBlock>
                         </StackPanel>
                         <Canvas Grid.Row="1" Background="{DynamicResource Grey100}" />
                         <TextBlock Grid.Row="1" Text="Grey100" Margin="10"/>
