@@ -17,7 +17,7 @@
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="BorderThickness" Value="0,0,0,0"/>
-        <Setter Property="ClickMode" Value="Press"/>
+        <Setter Property="ClickMode" Value="Release"/>
         <Setter Property="Focusable" Value="True"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -40,13 +40,17 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Opacity" Value="0.50"/>
                         </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="BorderThickness" Value="3"/>
+                            <Setter Property="Content" Value="&#x2713;"/> 
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
 
-
+     <!--TODO: implement demo of this-->
     <Style x:Key="ShowHideToggleButtonStyle" TargetType="{x:Type ToggleButton}">
         <Setter Property="Foreground" Value="{DynamicResource Grey}"/>
         <Setter Property="IsChecked" Value="True"/>
@@ -127,7 +131,6 @@
         </Setter>
     </Style>
 
-
     <Style x:Key="AnimatedSwitchStyle" TargetType="{x:Type ToggleButton}">
         <Setter Property="BorderBrush" Value="#EAEAEB"/>
         <Setter Property="Background" Value="#FAFAFB"/>
@@ -182,6 +185,5 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 
 </ResourceDictionary>

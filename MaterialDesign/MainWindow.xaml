@@ -92,7 +92,7 @@
             <TabItem Header="Buttons">
                 <StackPanel Margin="10">
                     <TextBlock>Toggle Button:</TextBlock>
-                    <ToggleButton Width="25" Height="25" BorderBrush="{DynamicResource Teal}" Background="{DynamicResource Teal}"/>
+                    <ToggleButton Width="25" Height="25" BorderBrush="{DynamicResource TealA700}" Background="{DynamicResource Teal}" Foreground="{DynamicResource TealA700}"/>
 
                     <TextBlock>AnimatedSwitchStyle:</TextBlock>
                     <ToggleButton Style="{StaticResource AnimatedSwitchStyle}" Width="25" Height="25" />
